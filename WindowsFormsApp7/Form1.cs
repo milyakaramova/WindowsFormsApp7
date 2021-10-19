@@ -86,21 +86,5 @@ namespace WindowsFormsApp7
                 }
             }
         }
-
-        private void button6_Click(object sender, EventArgs e)
-        {
-            string connect = @"Data Source=YATYPAYA;Initial Catalog=Ships;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
-            string zapros = "select[Ship], count(Ship) * 25 'Участие в %' from[Outcomes] group by[Ship]";
-            using (SqlConnection connection = new SqlConnection(connect))
-            {
-                connection.Open();
-                SqlDataAdapter adapter = new SqlDataAdapter(zapros, connect);
-                DataSet ds = new DataSet();
-                adapter.Fill(ds);
-                dataGridView1.DataSource = ds.Tables[0];
-                //vze
-     
-            }
-        }
     }
 }
