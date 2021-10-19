@@ -98,6 +98,7 @@ namespace WindowsFormsApp7
                 DataSet ds = new DataSet();
                 adapter.Fill(ds);
                 dataGridView1.DataSource = ds.Tables[0];
+                //vze
      
             }
         }
