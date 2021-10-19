@@ -33,7 +33,6 @@ namespace WindowsFormsApp7
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -78,16 +77,6 @@ namespace WindowsFormsApp7
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(510, 12);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(104, 43);
-            this.button5.TabIndex = 4;
-            this.button5.Text = "Ships2.0";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
-            // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -104,7 +93,6 @@ namespace WindowsFormsApp7
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(966, 536);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
@@ -122,7 +110,6 @@ namespace WindowsFormsApp7
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
         private System.Windows.Forms.DataGridView dataGridView1;
     }
 }
